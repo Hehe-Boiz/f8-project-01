@@ -6,7 +6,78 @@ html {
     /* khi sử dụng đơn vị rem là bằng 10px cho mỗi rem  */
     font-size: 62.5%;
 }
+:root{
+    /* màu chủ đạo */
+    --primary-color: #0F1B4C;
+}
 body{
     font-size: 1.6rem;
-    font-family: "Poppoins";
+    font-family: "Poppoins", sans-serif;
+}
+/* Common: thành phần dùng chung */
+.content{
+    /* nếu bình thường mà độ rộng lớn hơn 1110px thì hiện bth */
+    width: 1110px;
+    /* nếu như nhỏ hơn thì nó sẽ ăn theo max-width */
+    max-width: calc(100%-48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    /* có thể sao này sẽ có nhiều chữ hơn */
+    min-width: 98px;
+    /* 16px để khi nhiều chữ sẽ không dụng phải viền */
+    padding: 18px 16px;
+    /* khi làm chiều cao thì làm padding sẽ đơn giản hơn khi dùng height */
+    /* height: 40px; */
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+/* Header */
+.header{
+    background-color: #E6F0FF;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    /* đo theo thằng cao nhất là actions */
+    padding-top: 38px;
+}
+.navbar ul{
+    /* nếu dùng display: inline-block thì nó sẽ ăn luôn cả dấu xuống hành */
+    display: flex;
+    margin-left: 50px;
+}
+.navbar .actions {
+    margin-left: auto;
+}
+.navbar ul a{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #4F5361;
+    /* để cho người dùng có thể ấn xung quanh thẻ a, và trên dưới không quá sát chữ */
+    padding: 8px 14px;
+}
+.navbar ul a:hover{
+    text-decoration: underline;
+}
+.navbar .action-link{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.navbar .action-btn{
+    padding: 13px 16px;
+    margin-left: 18px;
 }
