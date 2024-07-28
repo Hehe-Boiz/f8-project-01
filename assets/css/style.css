@@ -1,0 +1,12 @@
+*{
+    /* sau này đỡ tính toán width để cộng thêm border padding  */
+    box-sizing: border-box;
+}
+html {
+    /* khi sử dụng đơn vị rem là bằng 10px cho mỗi rem  */
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppoins";
+}
