@@ -12,9 +12,12 @@ html {
 }
 body{
     font-size: 1.6rem;
-    font-family: "Poppoins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 /* Common: thành phần dùng chung */
+a{
+    text-decoration: none;
+}
 .content{
     /* nếu bình thường mà độ rộng lớn hơn 1110px thì hiện bth */
     width: 1110px;
@@ -23,10 +26,8 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-a{
-    text-decoration: none;
-}
 .btn{
+    display: inline-block;
     /* có thể sao này sẽ có nhiều chữ hơn */
     min-width: 98px;
     /* 16px để khi nhiều chữ sẽ không dụng phải viền */
@@ -80,4 +81,38 @@ a{
 .navbar .action-btn{
     padding: 13px 16px;
     margin-left: 18px;
+}
+.hero{
+    /* đo với thằng bên trên gần nhất */
+    margin-top: 130px;
+}
+.hero .info{
+    /* 559 / 1110px = 51%  */
+    width: 51%;
+}
+.hero .sub-title{
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+.hero .title{
+    /* do font poppins việt hóa có độ dày hơn poppins bình thường */
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+.hero .desc{
+    margin-top: 30px;
+    color: #5A6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+.hero-cta{
+    min-width: 170px;
+    margin-top: 40px;
 }
