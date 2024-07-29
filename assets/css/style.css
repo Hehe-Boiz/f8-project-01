@@ -34,7 +34,7 @@ a{
     padding: 18px 16px;
     /* khi làm chiều cao thì làm padding sẽ đơn giản hơn khi dùng height */
     /* height: 40px; */
-    border-radius: 8px;
+    border-radius: 12px;
     background: var(--primary-color);
     color: #FFF;
     text-align: center;
@@ -82,6 +82,7 @@ a{
 .navbar .action-btn{
     padding: 13px 16px;
     margin-left: 18px;
+    border-radius: 8px;
 }
 .hero{
     /* đo với thằng bên trên gần nhất */
@@ -150,4 +151,79 @@ a{
     align-items: center;
     justify-content: space-between;
     margin-top: 96px;
+}
+/*============= Guides =============*/
+.guides{
+    margin-top: 200px;
+}
+.guides .sub-title{
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+}
+
+.guides .sub-title::before{
+    position: absolute ;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.guides .desc {
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    color: #5A6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875;
+}
+.list-guide{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.guide-item{
+    margin: 0 70px;
+    text-align: center;
+}
+
+.guide-item .title{
+    margin-top: 26px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #3B3C45;
+}
+.guide-item .link{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    /* how to buy do có thể họ sẽ không tăng chữ lên nên có thể bỏ đi
+    line-height: 1.05; */
+    color: #0689FF;
+}
+
+.guide-item .arrow{
+    margin-left: 6px;
+}
+.guide-cta{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.guide-cta .btn{
+    min-width: 170px;
 }
