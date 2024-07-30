@@ -227,3 +227,107 @@ a{
 .guide-cta .btn{
     min-width: 170px;
 }
+
+/*============= Featured =============*/
+.featured{
+    margin-top: 120px;
+    padding: 110px 0;
+    background: #F5FAFE;
+}
+
+.featured .sub-title{
+    font-weight : 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color:#000339;
+}
+
+.featured .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.featured .desc{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+    color: #5A6473;
+}
+
+.featured .link{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0689FF;
+}
+
+.featured .link .arrow{
+    margin-left: 8px;
+}
+
+.featured .list {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.featured .item{
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+    /* khi thẻ con tràn ra thẻ cha thì sẽ bị ẩn đi nhưng nếu thêm 1 vài chi tiết khác thì sẽ bị ẩn tốt nhất không nên dùng */
+    /* overflow: hidden; */
+}
+
+.featured .list .thumb{
+    width: 100%;
+    height: 277px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.featured .item .body{
+    padding: 17px 20px 24px;
+}
+
+.featured .item .title{
+    color: #000339;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.featured .item .desc{
+    margin-top: 11px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #A3A6AB;
+}
+
+.featured .item .info {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.featured .item .icon{
+    margin-left: 23px;
+}
+
+.featured .item .icon:first-child{
+    margin-left: 0;
+}
+
+.featured .item .label {
+    margin-left: 8px;
+    color: #4D4D52;
+    font-size: 1.4rem;
+    font-weight: 500;
+    /* label ngắn nên không cần line-height */
+    /* line-height: 14px;  */
+    letter-spacing: 0.01em;
+}
