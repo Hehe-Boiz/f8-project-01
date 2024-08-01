@@ -50,6 +50,7 @@ a{
     -webkit-line-clamp: var(--line-clamp, 2);
     -webkit-box-orient: vertical;
     overflow: hidden;
+    line-clamp: 3; 
 }
 /*============= Header =============*/
 .header{
@@ -346,4 +347,171 @@ a{
     /* label ngắn nên không cần line-height */
     /* line-height: 14px;  */
     letter-spacing: 0.01em;
+}
+
+/*============= Stats =============*/
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+
+.stats .content {
+    width: 1048px;
+}
+
+.stats .row {
+    display: flex;
+}
+
+.stats .img-block, .stats .info {
+    width: 50%;
+}
+
+.stats .img-block{
+    position: relative;
+}
+
+.stats .info {
+    /* khoảng cách giữa khối content và img-block */
+    padding: 70px 0 0 165px;
+}
+
+.stats-trend{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* không nên để cố định chiều cao bởi vì sau này khi tăng dòng nó sẽ tràn */
+    width: 239px;
+    padding: 45px 22px 40px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #fff;
+}
+
+.stats-trend .value {
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+    /* không dùng line-height vì không ai để số 2 hàng */
+    /* line-height: 26px; */
+    letter-spacing: 0.01em;
+}
+
+.stats-trend .icon {
+    margin-left: auto;
+}
+
+.stats-trend .desc {
+    margin-top: 8px;
+    color: #A7A7A7;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+
+.stats-trend .separate {
+    height: 1.2px;
+    margin-top: 25px;
+    background: #E9E9E9;
+}
+
+.stats .avatar-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    margin-top: 26px;
+}
+
+.stats .avatar-group {
+    display: flex;
+}
+
+.stats .avatar {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -3px;
+    /* không hình */
+    color: #FFF;
+    /* có thể dùng flex để căn giữa */
+    line-height: 16px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 450;
+    letter-spacing: -0.02em;
+    background-color: var(--bg-color, #fff);
+}
+
+.stats .avatar:first-child{
+    margin-left: 0;
+}
+
+/* .stats .avatar-1{
+    color: #FFF;
+    line-height: 16px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 450;
+    letter-spacing: -0.02em;
+    background-color: #1F3BB1;
+} */
+
+.stats .img-block .image {
+    display: block;
+    margin-left: auto;
+    /* những ảnh nằm trong bố cục cụ thể thì nên đo trực tiếp trên bản thiết kế */
+    width: 400px;
+    height: 460px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.stats .sub-title{
+    position: relative;
+    width: 269px;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.29; /* 128.571% */
+}
+
+.stats .sub-title::before{
+    position: absolute;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 4px;    
+    border-radius: 12px;
+    background: #000339;
+}
+
+/* để tránh ảnh hưởng những phần tử khác nên ghi rõ ra */
+.stats .info .desc {
+    width: 309px;
+    margin-top: 20px;
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+
+.stats .row-qty {
+    justify-content: space-between;
+    margin-top: 110px;
+    /* do chữ thục vào phía sau avatar lấy 196 của avatar - 228 của số*/
+    padding: 0 32px;
+}
+
+.stats .qty {
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+
+.stats .qty-desc{
+    margin-top: 24px;
+    color: #7B8087;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
