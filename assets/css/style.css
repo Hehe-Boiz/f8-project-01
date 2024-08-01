@@ -14,7 +14,7 @@ body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
-/* Common: thành phần dùng chung */
+/*============== Common: thành phần dùng chung =============*/
 a{
     text-decoration: none;
 }
@@ -43,6 +43,13 @@ a{
 }
 .btn:hover{
     opacity: 0.9;
+}
+.line-clamp{
+    /* để phòng người dùng tương lai có thể sẽ nhập nhiều thông tin hơn và làm mất bố cục trang */
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 /*============= Header =============*/
 .header{
@@ -293,19 +300,23 @@ a{
     padding: 17px 20px 24px;
 }
 
-.featured .item .title{
+.featured .item .title a{
     color: #000339;
     font-size: 2rem;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .featured .item .desc{
+    /* dùng tên biến trực tiếp trong selector sẽ được ưu tiên hơn */
+    --line-clamp: 3;
     margin-top: 11px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.5;
     color: #A3A6AB;
+    /* nếu người dùng (người đăng nội dung) dán link vào sẽ làm hỏng giao diện */
+    word-break: break-all;
 }
 
 .featured .item .info {
