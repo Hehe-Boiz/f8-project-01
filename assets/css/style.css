@@ -515,3 +515,54 @@ a{
     font-size: 1.8rem;
     font-weight: 500;
 }
+
+/*============= Subscription =============*/
+.subscription{
+    margin-top: 90px;
+}
+
+.subscription .body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    border-radius: 20px;
+    background: #063183;
+}
+
+.subscription .info {
+    /* nếu tăng nội dung nó sẽ bị để sau bức ảnh */
+    width: 671px;
+    /* reponsive */
+    max-width: 100%;
+    padding: 0 80px;
+}
+
+.subscription .sub-title {
+    color: #FFF;
+    font-size: 3.5rem;
+    font-weight: 600;
+    /* nếu để line-height là 1 là chưa hợp lí do thêm 1 chút từ nữa thoi là thành 2 dòng */
+    line-height: 1.5; /* 100% */
+}
+
+.subscription .desc {
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+
+.subscription .btn {
+    margin-top: 20px;
+    min-width: 151px;
+    color: #002366;
+    background-color: #fff;
+}
+
+.subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
