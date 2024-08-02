@@ -53,7 +53,16 @@ a {
     line-clamp: 3;
 }
 /*============= Header =============*/
-.header {
+.fixed-header {
+    background-color: #e6f0ff;
+    /* do kích thước ban đầu cách trên là 38 nên bây giờ sẽ bù lại */
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
     position: relative;
     background-color: #e6f0ff;
     height: 100vh;
@@ -62,7 +71,9 @@ a {
     display: flex;
     align-items: center;
     /* đo theo thằng cao nhất là actions */
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    /* padding: 38px 0 12px; */
+    padding: 12px 0;
 }
 .navbar ul {
     /* nếu dùng display: inline-block thì nó sẽ ăn luôn cả dấu xuống hành */
@@ -94,7 +105,10 @@ a {
 }
 .hero {
     /* đo với thằng bên trên gần nhất */
-    margin-top: 130px;
+    /* margin-top: 130px; */
+    /* do nếu để margin thì sẽ bị margin collapse có thể sửa thành padding hoặc cho thẻ cha là flex
+    và nếu có thêm thẻ con thì sẽ bị để ngang nên sẽ để thêm flex-direction: clolumn*/
+    padding-top: 130px;
 }
 .hero .info {
     /* 559 / 1110px = 51%  */
