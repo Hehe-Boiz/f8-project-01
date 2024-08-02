@@ -65,7 +65,8 @@ a {
 .hero-wrap {
     position: relative;
     background-color: #e6f0ff;
-    height: 100vh;
+    /* do sửa phần nav nên có thêm 90px*/
+    height: calc(100vh - 90px);
 }
 .navbar {
     display: flex;
