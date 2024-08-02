@@ -70,6 +70,9 @@ a {
 }
 
 .hero-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     background-color: #e6f0ff;
     /* do sửa phần nav nên có thêm 90px*/
@@ -111,12 +114,13 @@ a {
     margin-left: 18px;
     border-radius: 8px;
 }
+/* có thể bỏ hẵn thẻ hero vì bây giờ không cần thiết nữa */
 .hero {
     /* đo với thằng bên trên gần nhất */
     /* margin-top: 130px; */
     /* do nếu để margin thì sẽ bị margin collapse có thể sửa thành padding hoặc cho thẻ cha là flex
     và nếu có thêm thẻ con thì sẽ bị để ngang nên sẽ để thêm flex-direction: clolumn*/
-    padding-top: 130px;
+    /* padding-top: 130px; */
 }
 .hero .info {
     /* 559 / 1110px = 51%  */
